@@ -15,6 +15,7 @@ public class BkFile{
     private Timestamp UPDATE_DATE;
 
 
+    @Column(name ="ID")
     public Long getID() {
         return ID;
     }
@@ -23,6 +24,7 @@ public class BkFile{
         this.ID = ID;
     }
 
+    @Column(name ="ORG_NAME")
     public String getORG_NAME() {
         return ORG_NAME;
     }
@@ -31,6 +33,7 @@ public class BkFile{
         this.ORG_NAME = ORG_NAME;
     }
 
+    @Column(name ="NEW_NAME")
     public String getNEW_NAME() {
         return NEW_NAME;
     }
@@ -39,6 +42,7 @@ public class BkFile{
         this.NEW_NAME = NEW_NAME;
     }
 
+    @Column(name ="PATH_TO")
     public String getPATH_TO() {
         return PATH_TO;
     }
@@ -47,6 +51,7 @@ public class BkFile{
         this.PATH_TO = PATH_TO;
     }
 
+    @Column(name ="TYPE")
     public String getTYPE() {
         return TYPE;
     }
@@ -55,6 +60,7 @@ public class BkFile{
         this.TYPE = TYPE;
     }
 
+    @Column(name ="FLAG")
     public String getFLAG() {
         return FLAG;
     }
@@ -63,6 +69,7 @@ public class BkFile{
         this.FLAG = FLAG;
     }
 
+    @Column(name ="CREATE_USER")
     public String getCREATE_USER() {
         return CREATE_USER;
     }
@@ -71,6 +78,7 @@ public class BkFile{
         this.CREATE_USER = CREATE_USER;
     }
 
+    @Column(name ="CREATE_DATE")
     public Timestamp getCREATE_DATE() {
         return CREATE_DATE;
     }
@@ -79,6 +87,7 @@ public class BkFile{
         this.CREATE_DATE = CREATE_DATE;
     }
 
+    @Column(name ="UPDATE_USER")
     public String getUPDATE_USER() {
         return UPDATE_USER;
     }
@@ -87,6 +96,7 @@ public class BkFile{
         this.UPDATE_USER = UPDATE_USER;
     }
 
+    @Column(name ="UPDATE_DATE")
     public Timestamp getUPDATE_DATE() {
         return UPDATE_DATE;
     }
