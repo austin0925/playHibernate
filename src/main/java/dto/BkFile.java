@@ -1,5 +1,9 @@
-@Entity
-@Table(name="BK_FILE")
+package dto;
+
+import java.util.Date;
+
+//@Entity
+//@Table(name="BK_FILE")
 public class BkFile{
 
 
@@ -10,12 +14,12 @@ public class BkFile{
     private String TYPE;
     private String FLAG;
     private String CREATE_USER;
-    private Timestamp CREATE_DATE;
+    private Date CREATE_DATE;
     private String UPDATE_USER;
-    private Timestamp UPDATE_DATE;
+    private Date UPDATE_DATE;
 
 
-    @Column(name ="ID")
+    //@Column(name ="ID")
     public Long getID() {
         return ID;
     }
@@ -24,7 +28,7 @@ public class BkFile{
         this.ID = ID;
     }
 
-    @Column(name ="ORG_NAME")
+    //@Column(name ="ORG_NAME")
     public String getORG_NAME() {
         return ORG_NAME;
     }
@@ -33,7 +37,7 @@ public class BkFile{
         this.ORG_NAME = ORG_NAME;
     }
 
-    @Column(name ="NEW_NAME")
+    //@Column(name ="NEW_NAME")
     public String getNEW_NAME() {
         return NEW_NAME;
     }
@@ -42,7 +46,7 @@ public class BkFile{
         this.NEW_NAME = NEW_NAME;
     }
 
-    @Column(name ="PATH_TO")
+    //@Column(name ="PATH_TO")
     public String getPATH_TO() {
         return PATH_TO;
     }
@@ -51,7 +55,7 @@ public class BkFile{
         this.PATH_TO = PATH_TO;
     }
 
-    @Column(name ="TYPE")
+    //@Column(name ="TYPE")
     public String getTYPE() {
         return TYPE;
     }
@@ -60,7 +64,7 @@ public class BkFile{
         this.TYPE = TYPE;
     }
 
-    @Column(name ="FLAG")
+    //@Column(name ="FLAG")
     public String getFLAG() {
         return FLAG;
     }
@@ -69,7 +73,7 @@ public class BkFile{
         this.FLAG = FLAG;
     }
 
-    @Column(name ="CREATE_USER")
+    //@Column(name ="CREATE_USER")
     public String getCREATE_USER() {
         return CREATE_USER;
     }
@@ -78,16 +82,16 @@ public class BkFile{
         this.CREATE_USER = CREATE_USER;
     }
 
-    @Column(name ="CREATE_DATE")
-    public Timestamp getCREATE_DATE() {
+    //@Column(name ="CREATE_DATE")
+    public Date getCREATE_DATE() {
         return CREATE_DATE;
     }
 
-    public void setCREATE_DATE(Timestamp CREATE_DATE) {
+    public void setCREATE_DATE(Date CREATE_DATE) {
         this.CREATE_DATE = CREATE_DATE;
     }
 
-    @Column(name ="UPDATE_USER")
+    //@Column(name ="UPDATE_USER")
     public String getUPDATE_USER() {
         return UPDATE_USER;
     }
@@ -96,12 +100,12 @@ public class BkFile{
         this.UPDATE_USER = UPDATE_USER;
     }
 
-    @Column(name ="UPDATE_DATE")
-    public Timestamp getUPDATE_DATE() {
+    //@Column(name ="UPDATE_DATE")
+    public Date getUPDATE_DATE() {
         return UPDATE_DATE;
     }
 
-    public void setUPDATE_DATE(Timestamp UPDATE_DATE) {
+    public void setUPDATE_DATE(Date UPDATE_DATE) {
         this.UPDATE_DATE = UPDATE_DATE;
     }
 
@@ -127,7 +131,7 @@ public class BkFile{
         return java.util.Objects.hash(super.hashCode(), ID, ORG_NAME, NEW_NAME, PATH_TO, TYPE, FLAG, CREATE_USER, CREATE_DATE, UPDATE_USER, UPDATE_DATE);
     }
 
-    @java.lang.Override
+    //@java.lang.Override
     public java.lang.String toString() {
         return "BkFile{" +
                 "ID=" + ID +
