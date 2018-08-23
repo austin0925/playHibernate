@@ -1,3 +1,4 @@
 
 # IDE setting
 .idea/
+.gradle/
